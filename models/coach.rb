@@ -1,5 +1,7 @@
 class Coach
+
   @@database = ['jason', 'katherine', 'christine']
+
   def self.all
     @@database
   end
@@ -11,4 +13,5 @@ class Coach
   def self.create(args)
     @@database << args[:coach_name]
   end
+
 end
